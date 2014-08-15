@@ -15,7 +15,7 @@ RUN apt-get update
 ################## BEGIN INSTALLATION ######################
 # Install Nginx.
 RUN \
-  add-apt-repository -y ppa:nginx/stable && \
+  add-apt-repository ppa:nginx/stable && \
   apt-get update && \
   apt-get install -y nginx && \
   echo "\ndaemon off;" >> /etc/nginx/nginx.conf && \
