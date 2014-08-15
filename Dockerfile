@@ -36,9 +36,8 @@ WORKDIR /etc/nginx
 CMD ["nginx"]
 
 # Expose ports.
-EXPOSE 80
-EXPOSE 443
+EXPOSE 80 443
 
 #### CSV FINGERPRINT ####
 # Install CSV Fingerprint
-RUN git clone https://github.com/setosa/csv-fingerprint.git /www-data
+RUN git clone https://github.com/setosa/csv-fingerprint.git /www-data/csv-fingerprint
