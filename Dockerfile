@@ -38,7 +38,7 @@ RUN \
   pip install nltk
 
 #download all the data packages for nltk
-RUN python -m nltk.downloader all
+# RUN python -m nltk.downloader all
 
 #### Python Port of Stanford NLP libraries         ####
 #### https://bitbucket.org/torotoki/corenlp-python ####
