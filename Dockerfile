@@ -9,6 +9,7 @@ FROM ubuntu
 # File author/maintainer
 MAINTAINER Alexander Fink <alexanderjfink@gmail.com>
 
+RUN echo deb http://archive.ubuntu.com/ubuntu precise main universe multiverse > /etc/apt/sources.list
 RUN apt-get update
 
 ################## BEGIN INSTALLATION ######################
