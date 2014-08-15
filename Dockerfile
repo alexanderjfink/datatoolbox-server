@@ -40,4 +40,4 @@ EXPOSE 80 443
 
 #### CSV FINGERPRINT ####
 # Install CSV Fingerprint
-RUN git clone https://github.com/setosa/csv-fingerprint.git /www-data/csv-fingerprint
+RUN git clone https://github.com/setosa/csv-fingerprint.git /usr/share/nginx/html/csv-fingerprint
