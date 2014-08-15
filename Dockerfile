@@ -29,9 +29,10 @@ RUN \
 
 #install the pip python package manager
 RUN \
-  apt-get install -y python-pip vim git-core screen unzip libyaml-dev
+  apt-get install -y python-pip vim git-core screen unzip libyaml-dev wget
 
-  #install the python package distribute, a prerequisite of nltk
+#install the python package distribute, a prerequisite of nltk
+
 RUN \
   pip install distribute && \
   pip install nltk
