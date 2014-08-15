@@ -39,4 +39,4 @@ EXPOSE 443
 
 #### CSV FINGERPRINT ####
 # Install CSV Fingerprint
-ADD https://github.com/vicapow/csv-fingerprint /www-data
+RUN git clone https://github.com/setosa/csv-fingerprint.git /www-data
