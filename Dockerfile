@@ -17,7 +17,7 @@ RUN \
   apt-get install -y python-software-properties && \
   add-apt-repository ppa:nginx/stable && \
   apt-get update && \
-  apt-get install git && \
+  apt-get install -y git && \
   apt-get update && \
   apt-get install -y nginx && \
   echo "\ndaemon off;" >> /etc/nginx/nginx.conf && \
