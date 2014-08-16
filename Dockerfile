@@ -48,8 +48,8 @@ RUN pip install pexpect unidecode jsonrpclib
 
 # clone the repository and download datafiles
 RUN git clone https://bitbucket.org/torotoki/corenlp-python.git
-RUN wget http://nlp.stanford.edu/software/stanford-corenlp-full-2013-06-20.zip
-RUN unzip stanford-corenlp-full-2013-06-20.zip
+# RUN wget http://nlp.stanford.edu/software/stanford-corenlp-full-2013-06-20.zip
+# RUN unzip stanford-corenlp-full-2013-06-20.zip
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y -q r-base r-base-dev gdebi-core libapparmor1 supervisor sudo libcurl4-openssl-dev
 RUN update-locale
